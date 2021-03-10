@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>劭田 Blog</title>
-  <icon>http://shaotianw.github.io/icon.png</icon>
+  <icon>https://www.gravatar.com/avatar/310a9ff1226663d7d07e42e39251790e</icon>
   <subtitle>江湖漫步，闲言碎语</subtitle>
   <link href="http://shaotianw.github.io/atom.xml" rel="self"/>
   
