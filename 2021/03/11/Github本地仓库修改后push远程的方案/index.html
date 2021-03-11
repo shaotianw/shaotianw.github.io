@@ -295,16 +295,16 @@
 <span id="more"></span>
 <p>感谢原作者：<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/qiaoanlu">刘娟娟PRESSone</a><br>文章原链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/89607964">Github进行fork后如何与原仓库同步</a></p>
 <h2 id="merge前的设定"><a href="#merge前的设定" class="headerlink" title="merge前的设定"></a>merge前的设定</h2><p><strong>step 1、</strong> 进入到本地仓库的目录：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;c&#x2F;users&#x2F;田豆豆&#x2F;Documents&#x2F;Personal</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/c/u</span>sers<span class="regexp">/田豆豆/</span>Documents/Personal</span><br></pre></td></tr></table></figure>
 
 <p><strong>step 2、</strong> 执行命令 <code>git remote -v</code> 查看你的远程仓库的路径：</p>
 <p>如果只有上面2行，说明你未设置<code>upstream</code>（中文叫：上游代码库）。一般情况下，设置好一次<code>upstream</code>后就无需重复设置。</p>
 <p><strong>step 3、</strong> 执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https:&#x2F;&#x2F;github.com&#x2F;shaotianw&#x2F;siyuan.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https:<span class="regexp">//gi</span>thub.com<span class="regexp">/shaotianw/</span>siyuan.git</span><br></pre></td></tr></table></figure>
 
 <p>把仓库设置为你的<code>upstream</code>。这个命令执行后，没有任何返回信息；所以再次执行命令<code>git remote -v</code>检查是否成功。</p>
 <p><strong>step 4、</strong> 执行命令 <code>git status</code> 检查本地是否有未提交的修改。如果有，则把你本地的有效修改，先从本地仓库推送到你的github仓库。最后再执行一次 <code>git status</code> 检查本地已无未提交的修改。依次执行以下步骤：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;your note&quot;</span><br><span class="line">git push siyuan master</span><br><span class="line">git status</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;your note&quot;</span></span><br><span class="line">git push siyuan <span class="literal">master</span></span><br><span class="line">git status</span><br></pre></td></tr></table></figure>
 <p>一般到这里就大功告成了！下面是<code>merge</code>的相关命令。</p>
 <h2 id="merge-的关键命令"><a href="#merge-的关键命令" class="headerlink" title="merge 的关键命令"></a>merge 的关键命令</h2><p>以下操作紧接着上面的步骤。</p>
 <p><strong>step 5、</strong> 执行命令 <code>git fetch upstream</code> 抓取原仓库的更新：</p>
