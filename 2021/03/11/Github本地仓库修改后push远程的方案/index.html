@@ -22,20 +22,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"shaotianw.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="今天在Kindle上读完了这本厚厚的天才达芬奇传记本，一窥文艺复兴时期杰出的学者列奥纳多·达·芬奇的一生。从出生到湮灭，我看到的是他在自然与科技、美丽与丑恶、世俗与超脱间不断徘徊，追求自我维度的拓展。这是大多数人都会经历的事情，为什么只有达芬奇将它们推到极致，留下几千页振聋发聩的智者笔记？">
+<meta name="description" content="今天使用GitHub自建笔记仓库，发现将本地仓库和远程仓库连接后，在本地修改无法push覆盖远程仓库，同时出现了千奇百怪的报错。上网爬文实验各种方法后，终于找到了一个行之有效的解决方案。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="列奥纳多·达·芬奇传笔记">
-<meta property="og:url" content="http://shaotianw.github.io/2021/03/09/%E5%88%97%E5%A5%A5%E7%BA%B3%E5%A4%9A%C2%B7%E8%BE%BE%C2%B7%E8%8A%AC%E5%A5%87%E4%BC%A0/index.html">
+<meta property="og:title" content="Github本地仓库修改后push远程的方案">
+<meta property="og:url" content="http://shaotianw.github.io/2021/03/11/Github%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E5%90%8Epush%E8%BF%9C%E7%A8%8B%E7%9A%84%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="劭田 Blog">
-<meta property="og:description" content="今天在Kindle上读完了这本厚厚的天才达芬奇传记本，一窥文艺复兴时期杰出的学者列奥纳多·达·芬奇的一生。从出生到湮灭，我看到的是他在自然与科技、美丽与丑恶、世俗与超脱间不断徘徊，追求自我维度的拓展。这是大多数人都会经历的事情，为什么只有达芬奇将它们推到极致，留下几千页振聋发聩的智者笔记？">
+<meta property="og:description" content="今天使用GitHub自建笔记仓库，发现将本地仓库和远程仓库连接后，在本地修改无法push覆盖远程仓库，同时出现了千奇百怪的报错。上网爬文实验各种方法后，终于找到了一个行之有效的解决方案。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-09T01:21:21.000Z">
-<meta property="article:modified_time" content="2021-03-10T08:28:18.871Z">
+<meta property="article:published_time" content="2021-03-11T06:41:08.000Z">
+<meta property="article:modified_time" content="2021-03-11T06:48:31.864Z">
 <meta property="article:author" content="劭田">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://shaotianw.github.io/2021/03/09/%E5%88%97%E5%A5%A5%E7%BA%B3%E5%A4%9A%C2%B7%E8%BE%BE%C2%B7%E8%8A%AC%E5%A5%87%E4%BC%A0/">
+<link rel="canonical" href="http://shaotianw.github.io/2021/03/11/Github%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E5%90%8Epush%E8%BF%9C%E7%A8%8B%E7%9A%84%E6%96%B9%E6%A1%88/">
 
 
 <script class="page-configurations">
@@ -47,7 +47,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>列奥纳多·达·芬奇传笔记 | 劭田 Blog</title>
+<title>Github本地仓库修改后push远程的方案 | 劭田 Blog</title>
   
 
 
@@ -172,7 +172,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -185,6 +185,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#merge%E5%89%8D%E7%9A%84%E8%AE%BE%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">merge前的设定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#merge-%E7%9A%84%E5%85%B3%E9%94%AE%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">merge 的关键命令</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -252,7 +253,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://shaotianw.github.io/2021/03/09/%E5%88%97%E5%A5%A5%E7%BA%B3%E5%A4%9A%C2%B7%E8%BE%BE%C2%B7%E8%8A%AC%E5%A5%87%E4%BC%A0/">
+    <link itemprop="mainEntityOfPage" href="http://shaotianw.github.io/2021/03/11/Github%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E5%90%8Epush%E8%BF%9C%E7%A8%8B%E7%9A%84%E6%96%B9%E6%A1%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -265,7 +266,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          列奥纳多·达·芬奇传笔记
+          Github本地仓库修改后push远程的方案
         </h1>
 
         <div class="post-meta-container">
@@ -275,16 +276,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-03-09 09:21:21" itemprop="dateCreated datePublished" datetime="2021-03-09T09:21:21+08:00">2021-03-09</time>
+      <time title="创建时间：2021-03-11 14:41:08 / 修改时间：14:48:31" itemprop="dateCreated datePublished" datetime="2021-03-11T14:41:08+08:00">2021-03-11</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-03-10 16:28:18" itemprop="dateModified" datetime="2021-03-10T16:28:18+08:00">2021-03-10</time>
-      </span>
 
   
 </div>
@@ -296,7 +291,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>今天在Kindle上读完了这本厚厚的天才达芬奇传记本，一窥文艺复兴时期杰出的学者<a target="_blank" rel="noopener" href="https://www.wiki-wiki.top/wiki/%E8%BE%BE%E8%8A%AC%E5%A5%87">列奥纳多·达·芬奇</a>的一生。<br>从出生到湮灭，我看到的是他在自然与科技、美丽与丑恶、世俗与超脱间不断徘徊，追求自我维度的拓展。<br>这是大多数人都会经历的事情，为什么只有达芬奇将它们推到极致，留下几千页振聋发聩的智者笔记？<span id="more"></span><br>我想主要还是源于他旺盛的求知欲和好奇心，一方面让他对各个学科和领域的知识广泛涉猎、汲取，另一方面也留了许许多多未竟的事业，不能不说令人遗憾。<br>现代社会还有这样探索欲旺盛而孜孜不倦的人吗？可能是少数吧。我们每天淹没在快节奏的工作和生活中，常常忙碌无所适从，一段时间下来发现自己根本没有感触到任何东西。而时间这东西，是最无情的。</p>
+        <p>今天使用GitHub自建笔记仓库，发现将本地仓库和远程仓库连接后，在本地修改无法push覆盖远程仓库，同时出现了千奇百怪的报错。上网爬文实验各种方法后，终于找到了一个行之有效的解决方案。</p>
+<span id="more"></span>
+<p>感谢原作者：<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/qiaoanlu">刘娟娟PRESSone</a><br>文章原链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/89607964">Github进行fork后如何与原仓库同步</a></p>
+<h2 id="merge前的设定"><a href="#merge前的设定" class="headerlink" title="merge前的设定"></a>merge前的设定</h2><p><strong>step 1、</strong> 进入到本地仓库的目录：</p>
+<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;c&#x2F;users&#x2F;田豆豆&#x2F;Documents&#x2F;Personal<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>step 2、</strong> 执行命令 <code>git remote -v</code> 查看你的远程仓库的路径：</p>
+<p>如果只有上面2行，说明你未设置<code>upstream</code>（中文叫：上游代码库）。一般情况下，设置好一次<code>upstream</code>后就无需重复设置。</p>
+<p><strong>step 3、</strong> 执行命令</p>
+<pre class="line-numbers language-none"><code class="language-none">git remote add upstream https:&#x2F;&#x2F;github.com&#x2F;shaotianw&#x2F;siyuan.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>把仓库设置为你的<code>upstream</code>。这个命令执行后，没有任何返回信息；所以再次执行命令<code>git remote -v</code>检查是否成功。</p>
+<p><strong>step 4、</strong> 执行命令 <code>git status</code> 检查本地是否有未提交的修改。如果有，则把你本地的有效修改，先从本地仓库推送到你的github仓库。最后再执行一次 <code>git status</code> 检查本地已无未提交的修改。依次执行以下步骤：</p>
+<pre class="line-numbers language-none"><code class="language-none">git add -A
+git commit -m &quot;your note&quot;
+git push siyuan master
+git status<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>一般到这里就大功告成了！下面是<code>merge</code>的相关命令。</p>
+<h2 id="merge-的关键命令"><a href="#merge-的关键命令" class="headerlink" title="merge 的关键命令"></a>merge 的关键命令</h2><p>以下操作紧接着上面的步骤。</p>
+<p><strong>step 5、</strong> 执行命令 <code>git fetch upstream</code> 抓取原仓库的更新：</p>
+<p><strong>step 6、</strong> 执行命令 <code>git checkout master</code> 切换到 master 分支：</p>
+<p><strong>step 7、</strong> 执行命令 <code>git merge upstream/master</code> 合并远程的master分支：</p>
+<p><strong>step 8、</strong> 执行命令 <code>git push</code> 把本地仓库向github仓库推送修改</p>
+<p>如果担心自己不小心改了哪里，可以再次执行命令 <code>git status</code> 检查哪些文件有变化。这个操作仅是检查，不会改变任何状态，放心用。</p>
 
     </div>
 
@@ -310,11 +328,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/03/10/%E6%88%91%E7%9A%84Kindle%E5%B7%A5%E5%85%B7%E5%8F%82%E8%80%83/" rel="prev" title="我的Kindle工具参考">
+                  <i class="fa fa-chevron-left"></i> 我的Kindle工具参考
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/03/09/%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91/" rel="next" title="构建个人博客踩坑">
-                  构建个人博客踩坑 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

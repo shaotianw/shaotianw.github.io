@@ -6,7 +6,7 @@
   <link href="http://shaotianw.github.io/atom.xml" rel="self"/>
   
   <link href="http://shaotianw.github.io/"/>
-  <updated>2021-03-10T05:07:18.601Z</updated>
+  <updated>2021-03-11T06:48:31.864Z</updated>
   <id>http://shaotianw.github.io/</id>
   
   <author>
@@ -17,14 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Github本地仓库修改后push远程的方案</title>
+    <link href="http://shaotianw.github.io/2021/03/11/Github%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E5%90%8Epush%E8%BF%9C%E7%A8%8B%E7%9A%84%E6%96%B9%E6%A1%88/"/>
+    <id>http://shaotianw.github.io/2021/03/11/Github%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E5%90%8Epush%E8%BF%9C%E7%A8%8B%E7%9A%84%E6%96%B9%E6%A1%88/</id>
+    <published>2021-03-11T06:41:08.000Z</published>
+    <updated>2021-03-11T06:48:31.864Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天使用GitHub自建笔记仓库，发现将本地仓库和远程仓库连接后，在本地修改无法push覆盖远程仓库，同时出现了千奇百怪的报错。上网爬文实验各种方法后，终于找到了一个行之有效的解决方案。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>我的Kindle工具参考</title>
     <link href="http://shaotianw.github.io/2021/03/10/%E6%88%91%E7%9A%84Kindle%E5%B7%A5%E5%85%B7%E5%8F%82%E8%80%83/"/>
     <id>http://shaotianw.github.io/2021/03/10/%E6%88%91%E7%9A%84Kindle%E5%B7%A5%E5%85%B7%E5%8F%82%E8%80%83/</id>
     <published>2021-03-10T03:50:19.000Z</published>
-    <updated>2021-03-10T05:07:18.601Z</updated>
+    <updated>2021-03-11T05:01:52.138Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;电子书制作转化&quot;&gt;&lt;a href=&quot;#电子书制作转化&quot; class=&quot;headerlink&quot; title=&quot;电子书制作转化&quot;&gt;&lt;/a&gt;电子书制作转化&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;calibre&lt;/strong&gt;&lt;br&gt;calibre 是一款功能强大且易于使用的电子书管理器，支持  azw3 、mobi 、epub 、pdf 、html 、txt  等多种格式的转换，&lt;br&gt;&lt;a href=&quot;https://calibre-ebook.com/zh_CN/download_windows64&quot;&gt;官方下载&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://bookfere.com/post/tag/calibre%E6%95%99%E7%A8%8B&quot;&gt;参考教程（书伴）&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;电子书制作转化&quot;&gt;&lt;a href=&quot;#电子书制作转化&quot; class=&quot;headerlink&quot; title=&quot;电子书制作转化&quot;&gt;&lt;/a&gt;电子书制作转化&lt;/h1&gt;&lt;h2 id=&quot;calibre&quot;&gt;&lt;a href=&quot;#calibre&quot; class=&quot;headerlink&quot; title=&quot;calibre&quot;&gt;&lt;/a&gt;&lt;strong&gt;calibre&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;calibre 是一款功能强大且易于使用的电子书管理器，支持azw3、mobi、epub、pdf、html、txt等多种格式的转换，&lt;br&gt;&lt;a href=&quot;https://calibre-ebook.com/zh_CN/download_windows64&quot;&gt;官方下载&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://bookfere.com/post/tag/calibre%E6%95%99%E7%A8%8B&quot;&gt;参考教程（书伴）&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -36,10 +51,10 @@
     <link href="http://shaotianw.github.io/2021/03/10/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9A%84MOC/"/>
     <id>http://shaotianw.github.io/2021/03/10/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9A%84MOC/</id>
     <published>2021-03-10T03:49:44.000Z</published>
-    <updated>2021-03-10T03:53:20.814Z</updated>
+    <updated>2021-03-11T05:02:53.816Z</updated>
     
     
-    <summary type="html">&lt;p&gt;今天在 &lt;a href=&quot;http://www.sspai.com/&quot;&gt;少数派&lt;/a&gt;阅读 &lt;a href=&quot;https://sspai.com/post/65273&quot;&gt;请不要神化双链笔记&lt;/a&gt;这篇文章时，在评论中发现作者提到了该概念，查询后只有乐高相关的概念 (&lt;a href=&quot;https://baike.baidu.com/item/%E4%B9%90%E9%AB%98MOC/23229533?fr=aladdin&quot;&gt;乐高MOC&lt;/a&gt;，My Own Creation的缩写，即跳出乐高官方 Set 的框架，完全依靠玩家自己的想象力去创造新的模型），不符合原意，到英文维基查询后释然。文中的MOC是管理学领域的名词，&lt;a href=&quot;https://en.wikipedia.org/wiki/Change_management&quot;&gt;Management of Change&lt;/a&gt;(Change Management)的缩写。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;今天在&lt;a href=&quot;http://www.sspai.com/&quot;&gt;少数派&lt;/a&gt;阅读&lt;a href=&quot;https://sspai.com/post/65273&quot;&gt;请不要神化双链笔记&lt;/a&gt;这篇文章时，在评论中发现作者提到了该概念，查询后只有乐高相关的概念(&lt;a href=&quot;https://baike.baidu.com/item/%E4%B9%90%E9%AB%98MOC/23229533?fr=aladdin&quot;&gt;乐高MOC&lt;/a&gt;，My Own Creation的缩写，即跳出乐高官方Set的框架，完全依靠玩家自己的想象力去创造新的模型），不符合原意，到英文维基查询后释然。文中的MOC是管理学领域的名词，&lt;a href=&quot;https://en.wikipedia.org/wiki/Change_management&quot;&gt;Management of Change&lt;/a&gt;(Change Management)的缩写。&lt;/p&gt;</summary>
     
     
     
@@ -51,10 +66,10 @@
     <link href="http://shaotianw.github.io/2021/03/10/%E7%9F%A5%E8%AF%86%E2%80%9C%E7%82%BC%E9%87%91%E6%9C%AF%E2%80%9D/"/>
     <id>http://shaotianw.github.io/2021/03/10/%E7%9F%A5%E8%AF%86%E2%80%9C%E7%82%BC%E9%87%91%E6%9C%AF%E2%80%9D/</id>
     <published>2021-03-10T01:02:21.000Z</published>
-    <updated>2021-03-10T03:48:53.482Z</updated>
+    <updated>2021-03-11T04:56:13.531Z</updated>
     
     
-    <summary type="html">&lt;p&gt;知识“炼金术”是我在 &lt;a href=&quot;https://www.igetget.com/&quot;&gt;得到&lt;/a&gt; 上听逻辑思维二次讲述的一个概念，意指作用原理没有经过严密论证、只关注东西本身效用的方法和技术。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;知识“炼金术”是我在&lt;a href=&quot;https://www.igetget.com/&quot;&gt;得到&lt;/a&gt;上听逻辑思维二次讲述的一个概念，意指作用原理没有经过严密论证、只关注东西本身效用的方法和技术。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;它更多的是从散落各处的数据、信息或工作实践中提炼出有价值、可复制的知识，注重演绎的方法。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -69,10 +84,10 @@
     <link href="http://shaotianw.github.io/2021/03/09/%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91/"/>
     <id>http://shaotianw.github.io/2021/03/09/%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91/</id>
     <published>2021-03-09T11:41:51.000Z</published>
-    <updated>2021-03-10T01:05:09.965Z</updated>
+    <updated>2021-03-11T04:56:11.157Z</updated>
     
     
-    <summary type="html">&lt;p&gt;一直心水或简洁、或华丽的个人博客，奈何行动力不足，最近又被推荐的 &lt;a href=&quot;https://www.wiki-wiki.top/wiki/Rss&quot;&gt;rss&lt;/a&gt; 勾起欲望，遂下定决心使用&lt;a href=&quot;https://www.wiki-wiki.top/wiki/GitHub&quot;&gt;github&lt;/a&gt;+&lt;a href=&quot;https://hexo.io/zh-cn&quot;&gt;hexo&lt;/a&gt;方案。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;一直心水或简洁、或华丽的个人博客，奈何行动力不足，最近又被推荐的&lt;a href=&quot;https://www.wiki-wiki.top/wiki/Rss&quot;&gt;rss&lt;/a&gt;勾起欲望，遂下定决心使用&lt;a href=&quot;https://www.wiki-wiki.top/wiki/GitHub&quot;&gt;github&lt;/a&gt;+&lt;a href=&quot;https://hexo.io/zh-cn&quot;&gt;hexo&lt;/a&gt;方案。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;系统&lt;/strong&gt;：win10家庭版&lt;br&gt;&lt;strong&gt;硬盘&lt;/strong&gt;：512G未分盘&lt;/p&gt;</summary>
     
     
